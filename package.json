@@ -4,6 +4,9 @@
   "description": "Next JS Test",
   "main": "index.js",
   "scripts": {
+    "build": "next build",
+    "dev": "next",
+    "start": "next start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/Kiran-Rao/next-js-test/issues"
   },
-  "homepage": "https://github.com/Kiran-Rao/next-js-test#readme"
+  "homepage": "https://github.com/Kiran-Rao/next-js-test#readme",
+  "dependencies": {
+    "next": "^5.1.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  }
 }
