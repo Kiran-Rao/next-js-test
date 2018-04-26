@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import Header from '../components/Header';
 
-const Post = ({ title, }) => (
+const PostLink = ({ title, id }) => (
   <li>
-    <Link href={`/page?title=${title}`}>
+    <Link as={`/p/${id}`} href={`/post?title=${title}`}>
       <a>{title}</a>
     </Link>
   </li>
@@ -15,9 +15,9 @@ const Index = () =>
     <Header />
     Welcome to next.js!
 
-    <Post title="Hello World" />
-    <Post title="Boeun" />
-    <Post title="asnoteuh" />
+    <PostLink id='hw' title="Hello World" />
+    <PostLink id='b' title="Boeun" />
+    <PostLink id='c' title="asnoteuh" />
   </div>
 ;
 
